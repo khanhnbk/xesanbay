@@ -1,0 +1,776 @@
+@font-face {
+  font-family: 'xesanbay';
+  src:  url('fonts/xesanbay.eot?s6sraj');
+  src:  url('fonts/xesanbay.eot?s6sraj#iefix') format('embedded-opentype'),
+    url('fonts/xesanbay.ttf?s6sraj') format('truetype'),
+    url('fonts/xesanbay.woff?s6sraj') format('woff'),
+    url('fonts/xesanbay.svg?s6sraj#xesanbay') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="xesanbay-"], [class*=" xesanbay-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'xesanbay' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xesanbay-zalo:before {
+  content: "\e9d1";
+}
+.xesanbay-arrow-top:before {
+  content: "\e980";
+}
+.xesanbay-check:before {
+  content: "\e9d9";
+  color: #b10707;
+}
+.xesanbay-switchaccount:before {
+  content: "\e912";
+}
+.xesanbay-hours-line:before {
+  content: "\e96c";
+}
+.xesanbay-account1:before {
+  content: "\e97f";
+}
+.xesanbay-airplane-clock:before {
+  content: "\e9c4";
+}
+.xesanbay-alarm:before {
+  content: "\e9c5";
+}
+.xesanbay-arrow-rounded:before {
+  content: "\e9c6";
+}
+.xesanbay-calender:before {
+  content: "\e9c7";
+}
+.xesanbay-car:before {
+  content: "\e9c8";
+}
+.xesanbay-handshake:before {
+  content: "\e9c9";
+}
+.xesanbay-location:before {
+  content: "\e9ca";
+  color: #1e9041;
+}
+.xesanbay-money1:before {
+  content: "\e9cb";
+}
+.xesanbay-next-outline:before {
+  content: "\e9cc";
+}
+.xesanbay-plane:before {
+  content: "\e9cd";
+}
+.xesanbay-phone:before {
+  content: "\e9ce";
+}
+.xesanbay-road:before {
+  content: "\e9cf";
+}
+.xesanbay-suitcase:before {
+  content: "\e9d0";
+}
+.xesanbay-flagvietnam .path1:before {
+  content: "\e9bc";
+  color: rgb(218, 37, 29);
+}
+.xesanbay-flagvietnam .path2:before {
+  content: "\e9bd";
+  margin-left: -1.3154296875em;
+  color: rgb(255, 255, 0);
+}
+.xesanbay-flagkjngdom .path1:before {
+  content: "\e9be";
+  color: rgb(0, 36, 125);
+}
+.xesanbay-flagkjngdom .path2:before {
+  content: "\e9bf";
+  margin-left: -1.3681640625em;
+  color: rgb(207, 27, 43);
+}
+.xesanbay-flagkjngdom .path3:before {
+  content: "\e9c0";
+  margin-left: -1.3681640625em;
+  color: rgb(238, 238, 238);
+}
+.xesanbay-flagkjngdom .path4:before {
+  content: "\e9c1";
+  margin-left: -1.3681640625em;
+  color: rgb(207, 27, 43);
+}
+.xesanbay-flagjapan .path1:before {
+  content: "\e9c2";
+  color: rgb(255, 255, 255);
+}
+.xesanbay-flagjapan .path2:before {
+  content: "\e9c3";
+  margin-left: -1.3154296875em;
+  color: rgb(210, 47, 39);
+}
+.xesanbay-computer:before {
+  content: "\e9bb";
+}
+.xesanbay-iconMetafiGetApp:before {
+  content: "\e9ad";
+}
+.xesanbay-crypto:before {
+  content: "\e9ba";
+}
+.xesanbay-wallet2:before {
+  content: "\e9b9";
+}
+.xesanbay-circle:before {
+  content: "\e916";
+}
+.xesanbay-about:before {
+  content: "\e900";
+}
+.xesanbay-account:before {
+  content: "\e901";
+}
+.xesanbay-activity1:before {
+  content: "\e902";
+}
+.xesanbay-analytics:before {
+  content: "\e903";
+}
+.xesanbay-android:before {
+  content: "\e904";
+}
+.xesanbay-arrow-down-fill:before {
+  content: "\e905";
+}
+.xesanbay-arrowLeft:before {
+  content: "\e906";
+}
+.xesanbay-arrowLeftFillCircle:before {
+  content: "\e907";
+}
+.xesanbay-arrowRight:before {
+  content: "\e908";
+}
+.xesanbay-art:before {
+  content: "\e909";
+}
+.xesanbay-availability:before {
+  content: "\e90a";
+}
+.xesanbay-beta-game:before {
+  content: "\e90b";
+}
+.xesanbay-bid:before {
+  content: "\e90c";
+}
+.xesanbay-book:before {
+  content: "\e90d";
+}
+.xesanbay-boxer:before {
+  content: "\e90e";
+}
+.xesanbay-brrowing:before {
+  content: "\e90f";
+}
+.xesanbay-business:before {
+  content: "\e910";
+}
+.xesanbay-buy:before {
+  content: "\e911";
+}
+.xesanbay-card-switch:before {
+  content: "\e913";
+}
+.xesanbay-careers:before {
+  content: "\e914";
+}
+.xesanbay-cash:before {
+  content: "\e915";
+}
+.xesanbay-coinMetafi:before {
+  content: "\e917";
+}
+.xesanbay-collection:before {
+  content: "\e918";
+}
+.xesanbay-colspand:before {
+  content: "\e919";
+}
+.xesanbay-comd:before {
+  content: "\e91a";
+}
+.xesanbay-comic:before {
+  content: "\e91b";
+}
+.xesanbay-comment:before {
+  content: "\e91c";
+}
+.xesanbay-comment-dots:before {
+  content: "\e91d";
+}
+.xesanbay-community:before {
+  content: "\e91e";
+  color: #9c9fa9;
+}
+.xesanbay-contact:before {
+  content: "\e91f";
+  color: #9c9fa9;
+}
+.xesanbay-copy:before {
+  content: "\e920";
+}
+.xesanbay-coupon:before {
+  content: "\e921";
+}
+.xesanbay-credit:before {
+  content: "\e922";
+}
+.xesanbay-currency:before {
+  content: "\e923";
+}
+.xesanbay-chart:before {
+  content: "\e924";
+}
+.xesanbay-dashboad:before {
+  content: "\e925";
+}
+.xesanbay-delete:before {
+  content: "\e926";
+}
+.xesanbay-developer:before {
+  content: "\e927";
+}
+.xesanbay-docs:before {
+  content: "\e928";
+}
+.xesanbay-dots:before {
+  content: "\e929";
+}
+.xesanbay-dress:before {
+  content: "\e92a";
+}
+.xesanbay-earth:before {
+  content: "\e92b";
+}
+.xesanbay-ecosystem:before {
+  content: "\e92c";
+}
+.xesanbay-ecosystem1:before {
+  content: "\e92d";
+}
+.xesanbay-email:before {
+  content: "\e92e";
+}
+.xesanbay-event:before {
+  content: "\e92f";
+}
+.xesanbay-evnets:before {
+  content: "\e930";
+}
+.xesanbay-expand:before {
+  content: "\e931";
+}
+.xesanbay-eye:before {
+  content: "\e932";
+}
+.xesanbay-facebook-messenger:before {
+  content: "\e933";
+}
+.xesanbay-farm:before {
+  content: "\e934";
+}
+.xesanbay-feedback:before {
+  content: "\e935";
+  color: #9c9fa9;
+}
+.xesanbay-filter:before {
+  content: "\e936";
+}
+.xesanbay-fire:before {
+  content: "\e937";
+}
+.xesanbay-game:before {
+  content: "\e938";
+  color: #fff;
+}
+.xesanbay-gold:before {
+  content: "\e939";
+}
+.xesanbay-grid:before {
+  content: "\e93a";
+}
+.xesanbay-ginsen:before {
+  content: "\e93b";
+}
+.xesanbay-hand-money:before {
+  content: "\e93c";
+}
+.xesanbay-hand .path1:before {
+  content: "\e93d";
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path2:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path3:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path4:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path5:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path6:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path7:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path8:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path9:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path10:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path11:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path12:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path13:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path14:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(51, 51, 52);
+}
+.xesanbay-hand .path15:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(59, 59, 61);
+}
+.xesanbay-hand .path16:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path17:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path18:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(49, 49, 49);
+}
+.xesanbay-hand .path19:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(50, 50, 51);
+}
+.xesanbay-hand .path20:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: rgb(48, 48, 49);
+}
+.xesanbay-hand .path21:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(50, 50, 50);
+}
+.xesanbay-hand .path22:before {
+  content: "\e952";
+  margin-left: -1em;
+  color: rgb(49, 49, 49);
+}
+.xesanbay-hand .path23:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(65, 65, 65);
+}
+.xesanbay-hand .path24:before {
+  content: "\e954";
+  margin-left: -1em;
+  color: rgb(55, 55, 55);
+}
+.xesanbay-hand .path25:before {
+  content: "\e955";
+  margin-left: -1em;
+  color: rgb(58, 58, 60);
+}
+.xesanbay-hand .path26:before {
+  content: "\e956";
+  margin-left: -1em;
+  color: rgb(49, 49, 50);
+}
+.xesanbay-hand .path27:before {
+  content: "\e957";
+  margin-left: -1em;
+  color: rgb(49, 49, 49);
+}
+.xesanbay-hand .path28:before {
+  content: "\e958";
+  margin-left: -1em;
+  color: rgb(62, 62, 64);
+}
+.xesanbay-hand .path29:before {
+  content: "\e959";
+  margin-left: -1em;
+  color: rgb(50, 50, 51);
+}
+.xesanbay-hand .path30:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: rgb(53, 53, 53);
+}
+.xesanbay-hand .path31:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path32:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(51, 51, 53);
+}
+.xesanbay-hand .path33:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(51, 51, 51);
+}
+.xesanbay-hand .path34:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(51, 51, 53);
+}
+.xesanbay-hand .path35:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(88, 88, 90);
+}
+.xesanbay-hand .path36:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(51, 51, 53);
+}
+.xesanbay-hand .path37:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(51, 51, 52);
+}
+.xesanbay-hand .path38:before {
+  content: "\e962";
+  margin-left: -1em;
+  color: rgb(52, 52, 54);
+}
+.xesanbay-hand .path39:before {
+  content: "\e963";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path40:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path41:before {
+  content: "\e965";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path42:before {
+  content: "\e966";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path43:before {
+  content: "\e967";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path44:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: rgb(48, 48, 50);
+}
+.xesanbay-hand .path45:before {
+  content: "\e969";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-hand .path46:before {
+  content: "\e96a";
+  margin-left: -1em;
+  color: rgb(61, 61, 62);
+}
+.xesanbay-heart-plus:before {
+  content: "\e96b";
+}
+.xesanbay-hero-shard:before {
+  content: "\e96d";
+}
+.xesanbay-hero:before {
+  content: "\e96e";
+}
+.xesanbay-home:before {
+  content: "\e96f";
+  color: #d0d2d6;
+}
+.xesanbay-icon-metafi:before {
+  content: "\e970";
+  color: #0d6efd;
+}
+.xesanbay-idea:before {
+  content: "\e971";
+}
+.xesanbay-indivi:before {
+  content: "\e972";
+}
+.xesanbay-info:before {
+  content: "\e973";
+}
+.xesanbay-introduce:before {
+  content: "\e974";
+  color: #9c9fa9;
+}
+.xesanbay-items:before {
+  content: "\e975";
+}
+.xesanbay-land:before {
+  content: "\e976";
+}
+.xesanbay-lending:before {
+  content: "\e977";
+}
+.xesanbay-level-16:before {
+  content: "\e978";
+}
+.xesanbay-like:before {
+  content: "\e979";
+}
+.xesanbay-loan:before {
+  content: "\e97a";
+}
+.xesanbay-logout:before {
+  content: "\e97b";
+  color: #9c9fa9;
+}
+.xesanbay-loyalty-rounded:before {
+  content: "\e97c";
+}
+.xesanbay-mac-os:before {
+  content: "\e97d";
+}
+.xesanbay-menu:before {
+  content: "\e97e";
+}
+.xesanbay-more-vertical:before {
+  content: "\e981";
+}
+.xesanbay-music:before {
+  content: "\e982";
+}
+.xesanbay-mystery:before {
+  content: "\e983";
+}
+.xesanbay-navi16:before {
+  content: "\e984";
+}
+.xesanbay-network:before {
+  content: "\e985";
+}
+.xesanbay-news:before {
+  content: "\e986";
+}
+.xesanbay-night:before {
+  content: "\e987";
+}
+.xesanbay-partner:before {
+  content: "\e988";
+}
+.xesanbay-parts:before {
+  content: "\e989";
+}
+.xesanbay-pay:before {
+  content: "\e98a";
+}
+.xesanbay-pet:before {
+  content: "\e98b";
+}
+.xesanbay-productions:before {
+  content: "\e98c";
+}
+.xesanbay-productions1:before {
+  content: "\e98d";
+}
+.xesanbay-rarity:before {
+  content: "\e98e";
+}
+.xesanbay-real-estate:before {
+  content: "\e98f";
+}
+.xesanbay-Receive:before {
+  content: "\e990";
+}
+.xesanbay-recharge:before {
+  content: "\e991";
+}
+.xesanbay-rent:before {
+  content: "\e992";
+}
+.xesanbay-renting:before {
+  content: "\e993";
+}
+.xesanbay-reward:before {
+  content: "\e994";
+}
+.xesanbay-rocket:before {
+  content: "\e995";
+}
+.xesanbay-sale:before {
+  content: "\e996";
+}
+.xesanbay-sale-1:before {
+  content: "\e997";
+}
+.xesanbay-search:before {
+  content: "\e998";
+}
+.xesanbay-sell:before {
+  content: "\e999";
+}
+.xesanbay-send:before {
+  content: "\e99a";
+}
+.xesanbay-send-1:before {
+  content: "\e99b";
+}
+.xesanbay-service:before {
+  content: "\e99c";
+}
+.xesanbay-setting:before {
+  content: "\e99d";
+}
+.xesanbay-share:before {
+  content: "\e99e";
+}
+.xesanbay-sheild:before {
+  content: "\e99f";
+}
+.xesanbay-shopping:before {
+  content: "\e9a0";
+}
+.xesanbay-staking:before {
+  content: "\e9a1";
+}
+.xesanbay-star:before {
+  content: "\e9a2";
+}
+.xesanbay-status:before {
+  content: "\e9a3";
+}
+.xesanbay-support:before {
+  content: "\e9a4";
+}
+.xesanbay-swap:before {
+  content: "\e9a5";
+}
+.xesanbay-sword:before {
+  content: "\e9a6";
+}
+.xesanbay-team:before {
+  content: "\e9a7";
+}
+.xesanbay-termsOfUse:before {
+  content: "\e9a8";
+  color: #9c9fa9;
+}
+.xesanbay-tiktok:before {
+  content: "\e9a9";
+}
+.xesanbay-timer:before {
+  content: "\e9aa";
+}
+.xesanbay-token:before {
+  content: "\e9ab";
+}
+.xesanbay-topup:before {
+  content: "\e9ac";
+}
+.xesanbay-thunder:before {
+  content: "\e9ae";
+}
+.xesanbay-transform:before {
+  content: "\e9af";
+}
+.xesanbay-transform-1:before {
+  content: "\e9b0";
+}
+.xesanbay-upgrade:before {
+  content: "\e9b1";
+}
+.xesanbay-UsagePolicy:before {
+  content: "\e9b2";
+  color: #9c9fa9;
+}
+.xesanbay-view:before {
+  content: "\e9b3";
+}
+.xesanbay-wallet:before {
+  content: "\e9b4";
+}
+.xesanbay-water-16:before {
+  content: "\e9b5";
+}
+.xesanbay-win8:before {
+  content: "\e9b6";
+}
+.xesanbay-withdrawal:before {
+  content: "\e9b7";
+}
+.xesanbay-activity:before {
+  content: "\e9b8";
+}
