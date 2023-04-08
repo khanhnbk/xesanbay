@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'xesanbay';
-  src:  url('fonts/xesanbay.eot?s6sraj');
-  src:  url('fonts/xesanbay.eot?s6sraj#iefix') format('embedded-opentype'),
-    url('fonts/xesanbay.ttf?s6sraj') format('truetype'),
-    url('fonts/xesanbay.woff?s6sraj') format('woff'),
-    url('fonts/xesanbay.svg?s6sraj#xesanbay') format('svg');
+  src:  url('fonts/xesanbay.eot?khxb7i');
+  src:  url('fonts/xesanbay.eot?khxb7i#iefix') format('embedded-opentype'),
+    url('fonts/xesanbay.ttf?khxb7i') format('truetype'),
+    url('fonts/xesanbay.woff?khxb7i') format('woff'),
+    url('fonts/xesanbay.svg?khxb7i#xesanbay') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.xesanbay-phone-ring:before {
+  content: "\e9d3";
+}
 .xesanbay-zalo:before {
   content: "\e9d1";
 }

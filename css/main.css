@@ -107,9 +107,7 @@
 
 /**Top Menu**/
 .navbar-dark{
-    position: absolute;
     width: 100%;
-    top: 40px;
 }
 
 /**Top Banner**/
@@ -117,10 +115,20 @@
     background-image: url(../images/bg.svg);
     background-position: bottom left;
     background-repeat: no-repeat;
+    position: relative;
     width: 100%;
-    height: 85vh;
-    background-color: var(--colorGeen);
-    padding-top: 200px;
+    min-height: 929px;
+    background-color: var(--colorGeenDark);
+}
+@media (min-width:1200px) {
+    .topBanner{min-height: 800px;}
+}
+.slogan{
+    transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+    -moz-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    -o-transform: translate(0, 50%);
 }
 .slogan h1{
     color: var(--chakra-colors-white);
@@ -142,8 +150,8 @@
     font-weight: 700;
 }
 .icar{
-    width: 100%;
-    padding-top: 230px;
+    position: absolute;
+    bottom: -37px;
 }
 
 /**form regis**/
@@ -152,8 +160,9 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 32px 24px;
-    gap: 24px;
-
+    margin-top: 40px;
+    gap: 20px;
+    
     width: 100%;
 
     background: #F3F3F3;
@@ -182,7 +191,11 @@
 
     color: #000000;
 }
-.form-registers .title-regis button{
+.form-registers .switchbtn button i{
+    font-size: 25px;
+}
+.form-registers .title-regis button,
+.form-registers .switchbtn button{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -196,7 +209,17 @@
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
 }
-.form-registers .title-regis button:hover{
+.form-registers .switchbtn button{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.form-registers .title-regis button:active,
+.form-registers .title-regis button:focus,
+.form-registers .title-regis button:hover,
+.form-registers .switchbtn button:hover{
     background: var(--colorGeenDark);
 }
 
@@ -232,7 +255,7 @@
 }
 .switchButton{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 0px;
     height: 38px;
@@ -251,6 +274,9 @@
 }
 .voucherForm p:last-child{
     color: var(--chakra-colors-blackAlpha-500);
+}
+.voucherForm .addvoucher{
+    background-color: transparent;
 }
 .calcu{
     display: flex;
@@ -275,6 +301,8 @@
 .addNote{
     cursor: pointer;
     color: var(--colorGeenLight);
+    padding-bottom: 5px;
+    display: block;
 }
 .btnCallCar{
     width: 100%;
@@ -289,9 +317,66 @@
     color: var(--chakra-colors-white);
     width: 100%;
     padding: 10px 0;
+    border: transparent;
 }
 .btnCallCar>button:hover{
     background-color: var(--colorGeenDark)!important;
+}
+
+.click-ontop{
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: var(--colorGeenLight);
+    line-height: 2px;
+    position: fixed;
+    bottom: 90px;
+    right: 0;
+    z-index: 1000;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.click-ontop i{
+    font-size: 40px;
+    color: var(--chakra-colors-blackAlpha-900)
+}
+
+/* modal */
+.dialog-call-car-content{
+    background-color: #E4E4E4;
+    border: transparent;
+    padding: 20px 30px;
+}
+.dialog-call-car-header{
+    border: transparent !important;
+    display: flex;
+    justify-content: center;
+}
+.dialog-call-car-header h5{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--colorGeenDark);
+}
+.info-dialog hr{
+    margin: 15px 0;
+    border: 1px dotted var(--chakra-colors-blackAlpha-200);
+}
+.info-dialog div div{
+    gap: 5px;
+}
+.info-dialog div div div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /**service table**/
@@ -417,7 +502,7 @@
 }
 .benerfit .bxBenerfit{
     background-color: transparent;
-    background-image: linear-gradient(90deg, var(--colorGeenDark, 0.5) 50%, var(--colorGeenDark, 0.5) 50%);
+    background-image: linear-gradient(90deg, rgba(20,85,40,0.8015581232492998) 0%, rgba(20,85,40,0.8) 100%);
     width: 40%;
     top: 25%;
     right: 0;
@@ -657,6 +742,21 @@
     border: 1px solid var(--chakra-colors-white);
     color: var(--colorGeenDark);
 }
+
+.list-btn-fixed{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 10px;
+    right: 50px;
+    transform: translate(50%, 150%);
+    -webkit-transform: translate(50%, 150%);
+    -moz-transform: translate(50%, 150%);
+    -ms-transform: translate(50%, 150%);
+    -o-transform: translate(50%, 150%);
+    z-index: 1000;
+}
+
 
 /* news */
 .news{
