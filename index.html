@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="xesanbay-v1.0/style.css">
@@ -81,7 +82,7 @@
             <h1>XXX.XXX</h1>
           </div>
           <div class="icar">
-            <img src="./images/car.png">
+            <img class="animate__animated animate__fadeInLeftBig" src="./images/car.png">
           </div>
         </div>
         <div class="col-4">
@@ -415,10 +416,18 @@
   <div class="customer-speak">
     <h1>Khách hàng nói về xe nhanh 247</h1>
     <div class="container">
-      <div class="row">
-        
+      <div class="row justify-content-center customer-bx">
         <div class="swiper-customer">
           <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="items-customer">
+                  <div class="avatar">
+                    <img src="./images/Ellipse.png" alt="" srcset="">
+                  </div>
+                  <h2>Nguyễn Văn A</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus. Pellentesque nunc erat ultrices mattis sem congue a</p>
+                </div>  
+            </div>      
             <div class="swiper-slide">
               <div class="items-customer">
                 <div class="avatar">
@@ -436,18 +445,12 @@
               <h2>Nguyễn Văn A</h2>
               <p>Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus. Pellentesque nunc erat ultrices mattis sem congue a</p>
             </div>  
-        </div>      
-        <div class="swiper-slide">
-          <div class="items-customer">
-            <div class="avatar">
-              <img src="./images/Ellipse.png" alt="" srcset="">
-            </div>
-            <h2>Nguyễn Văn A</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus. Pellentesque nunc erat ultrices mattis sem congue a</p>
-          </div>  
-      </div>      
-        </div>        
+          </div>      
+        </div>
+                 
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>   
     </div>
   </div>
   <!-- end customer-speak -->
@@ -474,7 +477,7 @@
   <div id="id-news" class="news">
     <h1>Tin tức</h1>
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         
         <div class="swiper-news">
           <div class="swiper-wrapper">
@@ -530,6 +533,45 @@
                 </a>
               </div>
             </div>   
+            <div class="swiper-slide">
+              <div class="items-news">
+                <a href="detail.html">
+                  <div class="thumb-pic">
+                    <img src="./images/bg_car.png" alt="">
+                  </div>
+                  <div class="news-content">
+                    <p>Xe ghép VIP - Dịch vụ đi xe ghép nhanh an toàn</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tempus varius.</p>
+                  </div>
+                </a>
+              </div>
+            </div>  
+            <div class="swiper-slide">
+              <div class="items-news">
+                <a href="detail.html">
+                  <div class="thumb-pic">
+                    <img src="./images/bg_car.png" alt="">
+                  </div>
+                  <div class="news-content">
+                    <p>Xe ghép VIP - Dịch vụ đi xe ghép nhanh an toàn</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tempus varius.</p>
+                  </div>
+                </a>
+              </div>
+            </div>   
+            <div class="swiper-slide">
+              <div class="items-news">
+                <a href="detail.html">
+                  <div class="thumb-pic">
+                    <img src="./images/bg_car.png" alt="">
+                  </div>
+                  <div class="news-content">
+                    <p>Xe ghép VIP - Dịch vụ đi xe ghép nhanh an toàn</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Tempus varius.</p>
+                  </div>
+                </a>
+              </div>
+            </div>  
           </div>
         </div>    
         
@@ -641,16 +683,40 @@
       },
     }
     );
+
     var swiper = new Swiper('.swiper-customer', {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      loop: true,
+      speed: 1000,
+      autoplay: {
+          delay: 3000,
       },
-    }
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      spaceBetween: 100,
+      coverflowEffect: {
+          rotate: 0,
+          stretch: 100,
+          depth: 80,
+          modifier: 0.6,
+          slideShadows: false,
+      },
+
+      // Navigation arrows
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+
+  }
     );
+
     var swiper = new Swiper('.swiper-news', {
+      loop: true,
+      speed: 1000,
+      grabCursor: true,
+      centeredSlides: true,
       slidesPerView: 4,
       spaceBetween: 20,
       pagination: {
