@@ -39,7 +39,7 @@
     align-items: center;
     padding: 0px;
     gap: 33px;
-    width: 1435px;
+    width: 1305px;
     height: 40px;
     left: 243px;
     top: 2px;
@@ -103,6 +103,20 @@
 }
 .color-menu-sub{
     background-color: var(--colorGeenDark);
+}
+.al-mn-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.al-mn-nav-item-link{
+    font-size: 20px;
+}
+.al-mn-btn-cta{
+    width: auto;
+}
+.al-mn-btn-cta button{
+    font-size: 20px;
 }
 
 /**Top Menu**/
