@@ -66,7 +66,7 @@
           </ul>
           <form class="d-flex al-mn-btn-cta">
             <button class="btn btn-hotline-color mg-lr-10px" type="submit">
-              <i class="xesanbay-phone-ring"></i>
+              <span class="animate__animated animate__tada"><i class="xesanbay-phone-ring"></i></span>
               0912 677 006</button>
           </form>
         </div>
@@ -81,7 +81,7 @@
             <h1>alo ngay <span><img src="./images/arrow_right.svg"></span></h1>
             <h1>XXX.XXX</h1>
           </div>
-          <div class="icar">
+          <div class="icar animate__headShake animate__animated animate__delay-1s animate__infinite">
             <img class="animate__animated animate__fadeInLeftBig" src="./images/car.png">
           </div>
         </div>
@@ -93,23 +93,52 @@
               <button><i class="xesanbay-road"></i> Đường dài</button>
             </div>
             <div class="form-content">
+              <div id="mySwichbtn" class="swich-air-longway">
+                  <div class="relative mb-6">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text" id="basic-addon1">
+                        <div class="ldot"></div>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
+                      <span class="input-group-text" id="basic-addon1">+</span>
+                    </div>
+                </div>
                 <div class="relative mb-6">
-                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
                   <div class="input-group input-group-sm mb-3">
                     <span class="input-group-text" id="basic-addon1">
-                      <div class="ldot"></div>
+                      <i class="xesanbay-location"></i>
                     </span>
-                    <input type="text" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
-                    <span class="input-group-text" id="basic-addon1">+</span>
+                    <input type="text" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
                   </div>
+                </div>
               </div>
-              <div class="relative mb-6">
-                <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
-                <div class="input-group input-group-sm mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <i class="xesanbay-location"></i>
-                  </span>
-                  <input type="text" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
+              <div id="mySwichbtn-sc" class="swich-air-longway-sc">
+                <div class="relative mb-6">
+                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="xesanbay-location"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                  <div class="relative mb-6">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text" id="basic-addon1">
+                        <div class="ldot"></div>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
+                      <span class="input-group-text" id="basic-addon1">+</span>
+                    </div>
+                </div>
+                <div class="relative mb-6">
+                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mã chuyến bay</label>
+                  <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" placeholder="Mã chuyến bay" aria-label="go" aria-describedby="basic-addon1">
+                  </div>
                 </div>
               </div>
               <div class="relative mb-6">
@@ -123,7 +152,7 @@
                     <label class="form-check-label" for="flexSwitchCheckDefault">VAT</label>
                   </div>
                   <div class="switchbtn">
-                    <button class="w-100 justify-content-center"><i class="xesanbay-arrow-rounded"></i> Đảo chiều</button>
+                    <button class="w-100 justify-content-center" onclick="myFunction()"><i class="xesanbay-arrow-rounded"></i> Đảo chiều</button>
                   </div>
                 </div>
               </div>
@@ -200,6 +229,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="bgCity">
+      <img src="./images/bg.svg" alt="" srcset="">
     </div>
   </div>
   <!-- Service Table -->
@@ -281,7 +313,7 @@
   <div class="benerfit">
     <h1>Lợi ích khi sử dụng dịch vụ xe sân bay</h1>
     <div class="bxBenerfit">
-          <div class="cntBenerfit">
+          <div class="cntBenerfit reveal">
             <div class="clList">
               <div class="iconBenerFit">
                 <i class="xesanbay-alarm"></i>
@@ -386,25 +418,25 @@
       <div class="row">
         <div class="col-12">
           <div class="pay-guide-pic">
-            <img src="./images/flower-car.png" alt="" srcset="">
-            <div class="items">
+            <img class="animate__animated animate__pulse animate__infinite" src="./images/flower-car.png" alt="" srcset="">
+            <div class="items reveal">
               <h2>Tiền mặt <i class="xesanbay-check"></i></h2>
               <p>Thanh toán trực  với tài xế sau khi kết thúc hành trình</p>
             </div>
-            <div class="items">
+            <div class="items reveal">
               <h2>Chuyển khoản <i class="xesanbay-check"></i></h2>
               <p>Thanh toán bằng cách chuyển khoản vào một trong các tài khoản do công ty chỉ định</p>
             </div>
-            <div class="items">
+            <div class="items reveal animate__delay-1s">
               <h2>Thanh toán trực tuyến <i class="xesanbay-check"></i></h2>
               <p>Thanh toán qua ví momo, zalopay...</p>
             </div>
-            <div class="items">
+            <div class="items reveal animate__delay-1s">
               <h2>Trả sau <i class="xesanbay-check"></i></h2>
               <p>Thanh toán trực tiếp tại văn phòng công ty tại số 123 Đống Đa, Hà Nội</p>
             </div>
           </div>
-          <div class="ctaPay">
+          <div class="ctaPay reveal animate__delay-2s">
             <button>Đặt xe</button>
           </div>
         </div>
@@ -459,13 +491,13 @@
     <div class="container">
       <div class="row">
         <div class="col-8">
-          <div class="cta-section-ct">
+          <div class="cta-section-ct reveal">
             <p>Xe đi sân bay - An toàn -Tiện lợi</p>
             <p>Giá chỉ từ 200K</p>
           </div>
         </div>
         <div class="col-4">
-          <div class="cta-button-sc">
+          <div class="cta-button-sc reveal animate__delay-1s">
             <button>Đặt xe</button>
           </div>
         </div>
@@ -662,6 +694,22 @@
 
   <!-- Initialize Swiper -->
   <script>
+    function myFunction() {
+      var x = document.getElementById("mySwichbtn");
+      var y = document.getElementById("mySwichbtn-sc");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      };
+      
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
+    }
+
     $(function(){
       $('#datepicker').datepicker();
     });
@@ -684,6 +732,23 @@
     }
     );
 
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("animate__animated", "animate__backInDown");
+        } else {
+          reveals[i].classList.remove("animate__animated", "animate__backInDown");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", reveal);    
     var swiper = new Swiper('.swiper-customer', {
       loop: true,
       speed: 1000,
