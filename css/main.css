@@ -52,6 +52,32 @@
     align-items: center;
     gap: 15px;
 }
+.top_line .top_line_content>.welcomeUser{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+}
+.top_line .top_line_content>.welcomeUser h5{
+    display: flex;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+.top_line .top_line_content>.welcomeUser h5 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 5px;
+    color: var(--colorGeenLight);
+}
+.top_line .top_line_content>.welcomeUser h5 span i{
+    color: var(--chakra-colors-blackAlpha-500)
+}
 .top_line .top_line_content .hotline_email>.dot_hotline{
     width: 1px;
     height: 18px;
@@ -97,6 +123,7 @@
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
 }
+
 .top_line .top_line_content>.flag_language{
     display: flex;
     flex-direction: row;
