@@ -48,16 +48,18 @@
 .top_line .top_line_content>.hotline_email{
     display: flex;
     flex-direction: row;
+    justify-items: center;
+    align-items: center;
     gap: 15px;
 }
 .top_line .top_line_content .hotline_email>.dot_hotline{
-    width: 4px;
-    height: 4px;
-    margin-top: 10px;
+    width: 1px;
+    height: 18px;
     background: #006837;
     flex: none;
     order: 1;
     flex-grow: 0;
+    display: flex;
 }
 .top_line .top_line_content>.hotline_email h5{
     font-style: normal;
@@ -72,10 +74,28 @@
     flex-grow: 0;
 }
 .top_line .top_line_content>.hotline_email h5.hot_number{
+    cursor: pointer;
     order: 0;
 }
 .top_line .top_line_content>.hotline_email h5.hot_email{
+    cursor: pointer;
     order: 2;
+}
+.top_line .top_line_content>.hotline_email h5:hover{
+    position: relative;
+}
+.top_line .top_line_content>.hotline_email h5:hover::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    background-color: var(--colorGeenLight);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 .top_line .top_line_content>.flag_language{
     display: flex;
@@ -549,13 +569,17 @@
 }
 .activeService{
     border: 1px solid var(--colorGeenLight);
+    color: var(--colorGeenLight);
 }
-.activeService>button{
+.activeService .ServiceContent p{
+    color: var(--colorGeenLight);
+}
+/* .activeService>button{
     background-color: var(--colorGeenLight);
     color: var(--chakra-colors-white);
-}
+} */
 .activeService>button:hover{
-    background-color: var(--colorGeenDark);
+    background-color: var(--colorGeenLight);
     color: var(--chakra-colors-white);
 }
 
@@ -830,11 +854,14 @@
     gap: 10px;
     right: 50px;
     transform: translate(50%, 150%);
-    -webkit-transform: translate(50%, 150%);
-    -moz-transform: translate(50%, 150%);
-    -ms-transform: translate(50%, 150%);
-    -o-transform: translate(50%, 150%);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
     z-index: 1000;
+}
+.list-btn-fixed a img{
+    zoom: 0.8;
 }
 
 /* custormer */
