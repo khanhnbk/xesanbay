@@ -23,7 +23,7 @@
     --colorYellow: #FFBB01;
 }
 
-button{
+/* button{
     letter-spacing: 1px;
     padding: 13px 20px 13px;
     outline: 0;
@@ -63,7 +63,6 @@ button:hover::after{
     color: var(--colorGeenLight);
 }
 
-/* BACKGROUND MOVE */
 .button-background-move {
     font-size: 16px;
     font-weight: 200;
@@ -101,7 +100,7 @@ button:hover::after{
   .button-background-move:hover:after {
     top: 0px;
     left: 0px;
-  }
+  } */
   
   @media (min-width: 768px) {
     .button-background-move {
@@ -293,6 +292,7 @@ button:hover::after{
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: calc(1.5rem * 6);
+    padding-bottom: 3rem;
 }
 
 @keyframes animate {
@@ -347,7 +347,7 @@ button:hover::after{
 }
 .icar{
     position: absolute;
-    bottom: calc(100vh - 90%);
+    bottom: calc(1.5rem * 6);
     z-index: 1000;
 }
 .icar img{
@@ -946,6 +946,10 @@ button:hover::after{
     align-items: center;
     flex-shrink: 1;
 }
+.button-background-move{
+    background-color: var(--colorRed);
+    color: var(--colorWhite)
+}
 .customer-speak .customer-evaluate .pic-rate .pic-rate-star .number{
     display: flex;
     flex-direction: column;
@@ -1491,5 +1495,11 @@ button:hover::after{
     }
     .cta-button-sc>button{
         width: 100%;
+    }
+}
+@media only screen and (min-width: 64em){
+    .icar{
+        position: relative;
+        top: 8rem;
     }
 }
