@@ -15,8 +15,8 @@
     <title>247 xe san bay</title>
 </head>
 <body class="warp">
-  <button class="click-ontop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="xesanbay-arrow-top"></i>TOP</button>
-  <div class="list-btn-fixed">
+  <button class="click-ontop d-none d-lg-block" onclick="topFunction()" id="myBtn" title="Go to top"><i class="xesanbay-arrow-top"></i>TOP</button>
+  <div class="list-btn-fixed d-none d-lg-block">
     <a href="#"><img src="./images/call.png" alt="" srcset=""></a>
     <a href="#"><img src="./images/zalo.png" alt="" srcset=""></a>
     <a href="#"><img src="./images/mes.png" alt="" srcset=""></a>
@@ -128,14 +128,14 @@
     </div>
   </div>
   <nav class="navbar navbar-expand-xxl navbar-dark color-menu-sub">
-      <div class="container g-0">
+      <div class="container menu-top-navi">
         <a class="navbar-brand" href="#">
             <img src="./images/logo.svg">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse menu-top-navi-coll" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 al-mn-nav">
               <li class="nav-item mg-lr-10px al-mn-nav-item">
                 <a class="nav-link al-mn-nav-item-link" aria-current="page" href="#"><img src="./images/dots-horizontal.svg" alt=""></a>
@@ -156,8 +156,8 @@
               <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#">Về chúng tôi</a>
             </li>
           </ul>
-          <form class="d-flex al-mn-btn-cta">
-            <button class="btn btn-hotline-color mg-lr-10px" type="submit">
+          <form class="d-flex al-mn-btn-cta d-none d-md-block">
+            <button class="btn-hotline-color mg-lr-10px" type="submit">
               <span class="animate__animated animate__tada"><i class="xesanbay-phone-ring"></i></span>
               0912 677 006</button>
           </form>
@@ -167,235 +167,235 @@
   <div class="topBanner">
     <div class="container">
       <div class="row">
-        <div class="col-8">
+         <div class="col">
           <div class="slogan">
-            <h1>đi sân bay</h1>
-            <h1>alo ngay <span><img src="./images/arrow_right.svg"></span></h1>
-            <h1>XXX.XXX</h1>
+            <h1>đặt xe không khó - alo là có</h1>
+            <h1>0888 30 3366</h1>
           </div>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-6 d-none d-lg-block">
           <div class="icar animate__headShake animate__animated animate__delay-1s">
-            <img class="animate__animated animate__fadeInLeftBig" src="./images/car.png">
+            <img class="animate__animated animate__fadeInLeftBig" src="./images/car_fer.png">
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-6">
           <div class="form-registers">
             <div class="title-regis">
               <h2>Đặt xe</h2>
-              <button><i class="xesanbay-plane"></i> Sân bay</button>
-              <button><i class="xesanbay-road"></i> Đường dài</button>
+              <div class="tab-btn-regis">
+                <button><i class="xesanbay-plane"></i> Sân bay</button>
+                <button><i class="xesanbay-road"></i> Đường dài</button>
+              </div>
             </div>
             <div class="form-content">
-              <div id="mySwichbtn" class="swich-air-longway">
+              <div class="form-content-lr">
+                <div id="mySwichbtn" class="swich-air-longway">
+                    <div class="relative mb-6">
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                      <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                          <div class="ldot"></div>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">+</span>
+                      </div>
+                  </div>
                   <div class="relative mb-6">
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
                     <div class="input-group input-group-sm mb-3">
                       <span class="input-group-text" id="basic-addon1">
-                        <div class="ldot"></div>
+                        <i class="xesanbay-location"></i>
                       </span>
-                      <input type="text" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
-                      <span class="input-group-text" id="basic-addon1">+</span>
+                      <input type="text" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
                     </div>
+                  </div>
                 </div>
-                <div class="relative mb-6">
-                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
-                  <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="basic-addon1">
-                      <i class="xesanbay-location"></i>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
+                <div id="mySwichbtn-sc" class="swich-air-longway-sc">
+                  <div class="relative mb-6">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="xesanbay-location"></i>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                    <div class="relative mb-6">
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                      <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                          <div class="ldot"></div>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">+</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="row">
+                    <div class="col">
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Loại xe</label>
+                      <div class="input-group input-group-sm mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">
+                          <i class="xesanbay-car"></i>
+                        </label>
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>4 Chỗ</option>
+                          <option value="1">5 Chỗ</option>
+                          <option value="2">7 Chỗ</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thời gian đi</label>
+                      <div class="input-group input-group-sm mb-3 date" id="datepicker">
+                        <label class="input-group-text" for="inputGroupSelect02">
+                          <i class="xesanbay-calender"></i>
+                        </label>
+                          <input type="text" class="form-control" id="date"/>
+                          <span class="input-group-append">
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+                <div class="voucherForm">
+                  <span class="addNote">+ Add voucher</span>
+                  <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Add voucher" aria-label="go" aria-describedby="basic-addon1">
                   </div>
                 </div>
               </div>
-              <div id="mySwichbtn-sc" class="swich-air-longway-sc">
-                <div class="relative mb-6">
-                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
-                  <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="basic-addon1">
-                      <i class="xesanbay-location"></i>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
+              <div class="form-content-lr">
+                <div class="relative">
+                  <div class="switchButton">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">2 Chiều</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">VAT</label>
+                    </div>
+                    <div class="switchbtn">
+                      <button class="w-100 justify-content-center" onclick="myFunction()"><i class="xesanbay-arrow-rounded"></i> Đảo chiều</button>
+                    </div>
                   </div>
                 </div>
-                  <div class="relative mb-6">
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
-                    <div class="input-group input-group-sm mb-3">
-                      <span class="input-group-text" id="basic-addon1">
-                        <div class="ldot"></div>
-                      </span>
-                      <input type="text" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
-                      <span class="input-group-text" id="basic-addon1">+</span>
-                    </div>
-                </div>
-                <div class="relative mb-6">
+                <div class="relative mt-3">
                   <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mã chuyến bay</label>
                   <div class="input-group input-group-sm mb-3">
                     <input type="text" class="form-control" placeholder="Mã chuyến bay" aria-label="go" aria-describedby="basic-addon1">
                   </div>
                 </div>
-              </div>
-              <div class="relative mb-6">
-                <div class="switchButton">
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">2 Chiều</label>
-                  </div>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">VAT</label>
-                  </div>
-                  <div class="switchbtn">
-                    <button class="w-100 justify-content-center" onclick="myFunction()"><i class="xesanbay-arrow-rounded"></i> Đảo chiều</button>
-                  </div>
-                </div>
-              </div>
-              <div class="relative mt-4">
-                <div class="row">
+                <div class="row mt-3">
+                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thông tin quý khách</label>
                   <div class="col">
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Loại xe</label>
                     <div class="input-group input-group-sm mb-3">
                       <label class="input-group-text" for="inputGroupSelect01">
-                        <i class="xesanbay-car"></i>
+                        <i class="xesanbay-phone"></i>
                       </label>
-                      <select class="form-select" id="inputGroupSelect01">
-                        <option selected>4 Chỗ</option>
-                        <option value="1">5 Chỗ</option>
-                        <option value="2">7 Chỗ</option>
-                      </select>
+                      <input type="number" class="form-control" placeholder="Số điện thoại" aria-label="go" aria-describedby="basic-addon1">
                     </div>
                   </div>
                   <div class="col">
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thời gian đi</label>
-                    <div class="input-group input-group-sm mb-3 date" id="datepicker">
+                    <div class="input-group input-group-sm mb-3">
                       <label class="input-group-text" for="inputGroupSelect02">
-                        <i class="xesanbay-calender"></i>
+                        <i class="xesanbay-account"></i>
                       </label>
-                        <input type="text" class="form-control" id="date"/>
-                        <span class="input-group-append">
+                      <input type="text" class="form-control" placeholder="Họ và tên" aria-label="go" aria-describedby="basic-addon1">
                     </div>
                   </div>
                 </div>  
-              </div>
-              <div class="voucherForm">
-                <p>Voucher:</p>
-                <input class="addvoucher" type="text" placeholder="Add voucher">
-              </div>
-              <div class="calcu">
-                <p class="tit-cal">
-                  <i class="xesanbay-credit"></i> Cước phí
-                </p>
-                <p class="moneyColors">0đ</p>
-              </div>
-              
-              <div class="row mt-3">
-                <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thông tin quý khách</label>
-                <div class="col">
+                
+                <div class="relative mb-6">
+                  <span class="addNote">+ Thêm ghi chú</span>
                   <div class="input-group input-group-sm mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">
-                      <i class="xesanbay-phone"></i>
-                    </label>
-                    <input type="number" class="form-control" placeholder="Số điện thoại" aria-label="go" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Ghi chú" aria-label="go" aria-describedby="basic-addon1">
                   </div>
                 </div>
-                <div class="col">
-                  <div class="input-group input-group-sm mb-3">
-                    <label class="input-group-text" for="inputGroupSelect02">
-                      <i class="xesanbay-account"></i>
-                    </label>
-                    <input type="text" class="form-control" placeholder="Họ và tên" aria-label="go" aria-describedby="basic-addon1">
-                  </div>
-                </div>
-              </div>  
-              
-              <div class="relative mb-6">
-                <span class="addNote">+ Thêm ghi chú</span>
-                <div class="input-group input-group-sm mb-3">
-                  <input type="text" class="form-control" placeholder="Ghi chú" aria-label="go" aria-describedby="basic-addon1">
-                </div>
               </div>
-
-              <div class="btnCallCar">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Đặt xe</button>
-              </div>
-
+            </div>
+            
+            <div class="calcu">
+              <p class="tit-cal">
+                <i class="xesanbay-credit"></i> Cước phí
+              </p>
+              <p class="moneyColors">0đ</p>
+            </div>
+            <div class="btnCallCar">
+              <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Đặt xe</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="bgCity">
-      <img src="./images/bg.svg" alt="" srcset="">
     </div>
   </div>
   <!-- Service Table -->
   <div id="service" class="serviceTable">
     <div class="container">
       <h1>Dịch vụ đặt xe đưa đón sân bay</h1>
-      <div class="row">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="serviceCard">
-                <div class="carImg">
-                  <img src="./images/5seats.png" alt="">
-                  <p>Mazda, Carato, Vios, Accent,..</p>
-                </div>
-                <div class="ServiceContent">
-                  <p>taxi nội bài 5 chỗ</p>
-                  <p><i class="xesanbay-suitcase"></i> 1 Vali vừa + 1 túi xách</p>
-                  <p><i class="xesanbay-switchaccount"></i> Tối đa 3 khách hàng</p>
-                  <p><i class="xesanbay-wallet"></i> Giá từ 170.000đ</p>
-                </div>
-                <button>Đặt xe</button>
-              </div>
+      <div class="row service-card">
+        <div class="col-lg-3">
+          <div class="serviceCard">
+            <div class="carImg">
+              <img src="./images/5seats.png" alt="">
+              <p>Mazda, Carato, Vios, Accent,..</p>
             </div>
-            <div class="swiper-slide">
-              <div class="serviceCard activeService">
-                <div class="carImg">
-                  <img src="./images/7seats.png" alt="">
-                  <p>Fortuner, Innova, Xpander,...</p>
-                </div>
-                <div class="ServiceContent">
-                  <p>taxi nội bài 7 chỗ</p>
-                  <p><i class="xesanbay-suitcase"></i> 2 Vali vừa + 1 túi xách</p>
-                  <p><i class="xesanbay-switchaccount"></i> Tối đa 3 khách hàng</p>
-                  <p><i class="xesanbay-wallet"></i> Giá từ 175.000đ</p>
-                </div>
-                <button>Đặt xe</button>
-              </div>
+            <div class="ServiceContent">
+              <p>taxi nội bài 5 chỗ</p>
+              <p><i class="xesanbay-suitcase"></i> 1 Vali vừa + 1 túi xách</p>
+              <p><i class="xesanbay-switchaccount"></i> Tối đa 3 khách hàng</p>
+              <p><i class="xesanbay-wallet"></i> Giá từ 170.000đ</p>
             </div>
-            <div class="swiper-slide">
-              <div class="serviceCard">
-                <div class="carImg">
-                  <img src="./images/16seats.png" alt="">
-                  <p>Ford Transit, Solati,...</p>
-                </div>
-                <div class="ServiceContent">
-                  <p>taxi nội bài 16 chỗ</p>
-                  <p><i class="xesanbay-suitcase"></i> 3 Vali vừa + 1 túi xách</p>
-                  <p><i class="xesanbay-switchaccount"></i> Tối đa 3 khách hàng</p>
-                  <p><i class="xesanbay-wallet"></i> Liên hệ</p>
-                </div>
-                <button>Đặt xe</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="serviceCard">
-                <div class="carImg">
-                  <img src="./images/29seats.png" alt="">
-                  <p>Samco, Huyndai County....</p>
-                </div>
-                <div class="ServiceContent">
-                  <p>taxi nội bài 29 chỗ</p>
-                  <p><i class="xesanbay-suitcase"></i> Liên hệ</p>
-                  <p><i class="xesanbay-switchaccount"></i> Liên hệ</p>
-                  <p><i class="xesanbay-wallet"></i> Liên hệ</p>
-                </div>
-                <button>Đặt xe</button>
-              </div>
-            </div>
+            <button>Đặt xe</button>
           </div>
-          <!-- Add Pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="col-lg-3">
+          <div class="serviceCard activeService">
+            <div class="carImg">
+              <img src="./images/7seats.png" alt="">
+              <p>Fortuner, Innova, Xpander,...</p>
+            </div>
+            <div class="ServiceContent">
+              <p>taxi nội bài 7 chỗ</p>
+              <p><i class="xesanbay-suitcase"></i> 2 Vali vừa + 1 túi xách</p>
+              <p><i class="xesanbay-switchaccount"></i> Tối đa 3 khách hàng</p>
+              <p><i class="xesanbay-wallet"></i> Giá từ 175.000đ</p>
+            </div>
+            <button>Đặt xe</button>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="serviceCard">
+            <div class="carImg">
+              <img src="./images/16seats.png" alt="">
+              <p>Ford Transit, Solati,...</p>
+            </div>
+            <div class="ServiceContent">
+              <p>taxi nội bài 16 chỗ</p>
+              <p><i class="xesanbay-suitcase"></i> 3 Vali vừa + 1 túi xách</p>
+              <p><i class="xesanbay-switchaccount"></i> Tối đa 3 khách hàng</p>
+              <p><i class="xesanbay-wallet"></i> Liên hệ</p>
+            </div>
+            <button>Đặt xe</button>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="serviceCard">
+            <div class="carImg">
+              <img src="./images/29seats.png" alt="">
+              <p>Samco, Huyndai County....</p>
+            </div>
+            <div class="ServiceContent">
+              <p>taxi nội bài 29 chỗ</p>
+              <p><i class="xesanbay-suitcase"></i> Liên hệ</p>
+              <p><i class="xesanbay-switchaccount"></i> Liên hệ</p>
+              <p><i class="xesanbay-wallet"></i> Liên hệ</p>
+            </div>
+            <button>Đặt xe</button>
+          </div>
         </div>
       </div>
     </div>
@@ -463,10 +463,13 @@
   <div class="guide-call">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <img src="./images/cachdatxe.svg" alt="" srcset="">
+        <div class="col-md-6">
+          <div class="tt-guide-call">
+            <img class="d-none d-md-block" src="./images/cachdatxe.svg" alt="" srcset="">
+            <img class="d-block d-md-none" src="./images/cachdatxe-mobile.svg" alt="" srcset="">
+          </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="guide-call-content">
             <div class="list-guide-call">
               <h2>Gọi trực tiếp</h2>
@@ -511,21 +514,23 @@
         <div class="col-12">
           <div class="pay-guide-pic">
             <img class="animate__animated animate__pulse animate__infinite" src="./images/flower-car.png" alt="" srcset="">
-            <div class="items reveal">
-              <h2>Tiền mặt <i class="xesanbay-check"></i></h2>
-              <p>Thanh toán trực  với tài xế sau khi kết thúc hành trình</p>
-            </div>
-            <div class="items reveal">
-              <h2>Chuyển khoản <i class="xesanbay-check"></i></h2>
-              <p>Thanh toán bằng cách chuyển khoản vào một trong các tài khoản do công ty chỉ định</p>
-            </div>
-            <div class="items reveal animate__delay-1s">
-              <h2>Thanh toán trực tuyến <i class="xesanbay-check"></i></h2>
-              <p>Thanh toán qua ví momo, zalopay...</p>
-            </div>
-            <div class="items reveal animate__delay-1s">
-              <h2>Trả sau <i class="xesanbay-check"></i></h2>
-              <p>Thanh toán trực tiếp tại văn phòng công ty tại số 123 Đống Đa, Hà Nội</p>
+            <div class="items-pay-guide">
+              <div class="items reveal">
+                <h2>Tiền mặt <i class="xesanbay-check"></i></h2>
+                <p>Thanh toán trực  với tài xế sau khi kết thúc hành trình</p>
+              </div>
+              <div class="items reveal">
+                <h2>Chuyển khoản <i class="xesanbay-check"></i></h2>
+                <p>Thanh toán bằng cách chuyển khoản vào một trong các tài khoản do công ty chỉ định</p>
+              </div>
+              <div class="items reveal animate__delay-1s">
+                <h2>Thanh toán trực tuyến <i class="xesanbay-check"></i></h2>
+                <p>Thanh toán qua ví momo, zalopay...</p>
+              </div>
+              <div class="items reveal animate__delay-1s">
+                <h2>Trả sau <i class="xesanbay-check"></i></h2>
+                <p>Thanh toán trực tiếp tại văn phòng công ty tại số 123 Đống Đa, Hà Nội</p>
+              </div>
             </div>
           </div>
           <div class="ctaPay reveal animate__delay-2s">
@@ -538,57 +543,129 @@
   <!-- end payment guide -->
   <!-- customer-speak -->
   <div class="customer-speak">
-    <h1>Khách hàng nói về xe nhanh 247</h1>
+    <h1>đánh giá dịch vụ</h1>
     <div class="container">
-      <div class="row justify-content-center customer-bx">
-        <div class="swiper-customer">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="items-customer">
-                  <div class="avatar">
-                    <img src="./images/Ellipse.png" alt="" srcset="">
-                  </div>
-                  <h2>Nguyễn Văn A</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus. Pellentesque nunc erat ultrices mattis sem congue a</p>
-                </div>  
-            </div>      
-            <div class="swiper-slide">
-              <div class="items-customer">
-                <div class="avatar">
-                  <img src="./images/Ellipse.png" alt="" srcset="">
+      <div class="customer-evaluate">
+        <div class="cust-evalue">
+          <div class="pic-rate">
+            <div class="pic-rate-star">
+              <div class="number">
+                <h2>5/5</h2>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
                 </div>
-                <h2>Nguyễn Văn A</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus. Pellentesque nunc erat ultrices mattis sem congue a</p>
-              </div>  
-          </div>      
-          <div class="swiper-slide">
-            <div class="items-customer">
-              <div class="avatar">
-                <img src="./images/Ellipse.png" alt="" srcset="">
               </div>
-              <h2>Nguyễn Văn A</h2>
-              <p>Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus. Pellentesque nunc erat ultrices mattis sem congue a</p>
             </div>  
-          </div>      
+            <div class="pic-rate-pie">
+              <div class="r-pie">
+                <i class="fa fa-star r-pie-star"></i>
+                <div class="progress pie-progress">
+                  <div class="progress-bar progress-bar-color" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="r-pie">
+                <i class="fa fa-star r-pie-star"></i>
+                <div class="progress pie-progress">
+                  <div class="progress-bar progress-bar-color" role="progressbar" style="width: 55%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="r-pie">
+                <i class="fa fa-star r-pie-star"></i>
+                <div class="progress pie-progress">
+                  <div class="progress-bar progress-bar-color" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="r-pie">
+                <i class="fa fa-star r-pie-star"></i>
+                <div class="progress pie-progress">
+                  <div class="progress-bar progress-bar-color" role="progressbar" style="width: 0" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="r-pie">
+                <i class="fa fa-star r-pie-star"></i>
+                <div class="progress pie-progress">
+                  <div class="progress-bar progress-bar-color" role="progressbar" style="width: 0" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pic-rate-btn">
+            <button class="btn btn-lg button-background-move">Gửi đánh giá</button>
+          </div>
         </div>
-                 
+        <div class="evaluates">
+          <div class="top-eva">
+            <div class="eva-star">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Viết đánh giá cho chúng tôi</h3>
+          </div>
+          <div class="list-evalua">
+            <div class="card item-lst">
+              <div class="card-body items-evalua">
+                <h2 class="card-title">Nguyễn Huy Đức</h2>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus.</p>
+                <ul class="lst-picture">
+                  <li><img src="./images/anh1.png" alt="" srcset=""></li>
+                  <li><img src="./images/anh2.png" alt="" srcset=""></li>
+                  <li><img src="./images/anh3.png" alt="" srcset=""></li>
+                  <li><img src="./images/anh4.png" alt="" srcset=""></li>
+                </ul>
+                <a href="#" class="card-link">Phản hồi của Taxinoibai180</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus.</p>
+              </div>
+              <div class="card-body items-evalua">
+                <h2 class="card-title">Nguyễn Huy Đức</h2>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus.</p>
+                <ul class="lst-picture">
+                  <li><img src="./images/anh1.png" alt="" srcset=""></li>
+                  <li><img src="./images/anh2.png" alt="" srcset=""></li>
+                  <li><img src="./images/anh3.png" alt="" srcset=""></li>
+                  <li><img src="./images/anh4.png" alt="" srcset=""></li>
+                </ul>
+                <a href="#" class="card-link">Phản hồi của Taxinoibai180</a>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur. Odio hac suspendisse quis enim. Enim viverra aliquet ipsum dignissim et vulputate ullamcorper elit. Sagittis volutpat etiam et duis tempus ridiculus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>   
-    </div>
+    </div>  
   </div>
   <!-- end customer-speak -->
   <!-- CTA Section -->
   <div class="cta-Section">
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-md-8">
           <div class="cta-section-ct reveal">
             <p>Xe đi sân bay - An toàn -Tiện lợi</p>
             <p>Giá chỉ từ 200K</p>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="cta-button-sc reveal animate__delay-1s">
             <button>Đặt xe</button>
           </div>
@@ -880,6 +957,23 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
     }
     );
   </script>
