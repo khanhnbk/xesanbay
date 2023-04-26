@@ -292,7 +292,7 @@ button:hover::after{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: calc(100vh - 47%);
+    padding-top: calc(1.5rem * 6);
 }
 
 @keyframes animate {
