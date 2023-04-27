@@ -13,57 +13,156 @@
     <title>247 xe san bay</title>
 </head>
 <body class="warp">
-  <div class="top_line">
-    <div class="top_line_content">
-      <div class="hotline_email">
-        <h5 class="hot_number">Hotline: (+84)912 677 006</h5>
-        <div class="dot_hotline"></div>
-        <h5 class="hot_email">Email: xesanbay247.cskh@gmail.com</h5>
-      </div>
-      <div class="flag_language">
-        <i class="xesanbay-flagkjngdom"></i>
-        <h5>VI</h5>
-      </div>
+  <div class="  d-none d-lg-block">
+    <button class="click-ontop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="xesanbay-arrow-top"></i>TOP</button></div>
+    <div class="list-btn-fixed d-none d-lg-block">
+      <a href="#"><img src="./images/call.png" alt="" srcset=""></a>
+      <a href="#"><img src="./images/zalo.png" alt="" srcset=""></a>
+      <a href="#"><img src="./images/mes.png" alt="" srcset=""></a>
     </div>
-  </div>
-  <nav class="navbar navbar-expand-xxl navbar-dark color-menu-sub">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="./images/logo.svg">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="css-1ds0rzy mg-lr-32px d-none d-sm-block"><div class="css-p5g4mq"></div></div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 al-mn-nav">
-              <li class="nav-item mg-lr-10px al-mn-nav-item">
-                <a class="nav-link al-mn-nav-item-link" aria-current="page" href="#"><img src="./images/dots-horizontal.svg" alt=""></a>
-              </li>
-            <li class="nav-item al-mn-nav-item mg-lr-10px">
-              <a class="nav-link al-mn-nav-item-link active" aria-current="page" href="index.html">Trang chủ</a>
-            </li>
-            <li class="nav-item al-mn-nav-item mg-lr-10px">
-              <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#">Dịch vụ</a>
-            </li>
-            <li class="nav-item al-mn-nav-item mg-lr-10px">
-              <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#">Bảng giá</a>
-            </li>
-            <li class="nav-item al-mn-nav-item mg-lr-10px">
-              <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#">Tin tức</a>
-            </li>
-            <li class="nav-item al-mn-nav-item mg-lr-10px">
-              <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#">Về chúng tôi</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <button class="btn btn-hotline-color mg-lr-10px" type="submit">
-              <i class="xesanbay-phone"></i>
-              0912 677 006</button>
-          </form>
+    <div class="top_line">
+      <div class="top_line_content">
+        <div class="hotline_email">
+          <h5 class="hot_number" data-bs-toggle="modal" data-bs-target="#fromRegister">Đăng ký</h5>
+          <div class="dot_hotline"></div>
+          <h5 class="hot_email" data-bs-toggle="modal" data-bs-target="#fromLogin">Đăng nhập</h5>
+        </div>
+        <!-- Welcome user -->
+        <!-- <div class="welcomeUser">
+          <h5 data-bs-toggle="modal" data-bs-target="#fromRegister">Xin chào<span><i class="xesanbay-account1"></i> Nguyễn Đức</span></h5>
+        </div> -->
+        <!-- Modal Register -->
+        <div class="modal fade" id="fromRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Đăng ký</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="from">
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Họ và tên</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" placeholder="Họ và tên" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tên đăng nhập</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" placeholder="Tên đăng nhập" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Số điện thoại</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="number" class="form-control" placeholder="Số điện thoại" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="email" class="form-control" placeholder="Email" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mật khẩu</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" placeholder="Mật khẩu" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nhập lại mật khẩu</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" placeholder="Nhập lại mật khẩu" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="btnCallCar">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Đăng ký</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Login -->
+        <div class="modal fade" id="fromLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="from">
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tên đăng nhập</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" placeholder="Tên đăng nhập" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mật khẩu</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" placeholder="Mật khẩu" aria-label="go" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="btnCallCar">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Đăng nhập</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flag_language">
+          <span class="xesanbay-flagkjngdom"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+          <!-- <span class="xesanbay-flagvietnam"><span class="path1"></span><span class="path2"></span></span> -->
+          <h5>VI</h5>
         </div>
       </div>
-  </nav>
+    </div>
+  <nav class="navbar navbar-expand-xxl navbar-dark color-menu-sub-w">
+    <div class="container menu-top-navi">
+      <a class="navbar-brand" href="#">
+          <img src="./images/logo.svg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menu-top-navi-coll" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 al-mn-nav">
+            <li class="nav-item mg-lr-10px al-mn-nav-item">
+              <a class="nav-link al-mn-nav-item-link" aria-current="page" href="#"><img src="./images/dots-horizontal.svg" alt=""></a>
+            </li>
+          <li class="nav-item al-mn-nav-item mg-lr-10px">
+            <a class="nav-link al-mn-nav-item-link active" aria-current="page" href="index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item al-mn-nav-item mg-lr-10px">
+            <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#service">Dịch vụ</a>
+          </li>
+          <li class="nav-item al-mn-nav-item mg-lr-10px">
+            <a class="nav-link al-mn-nav-item-link " aria-current="page" href="banggia.html">Bảng giá</a>
+          </li>
+          <li class="nav-item al-mn-nav-item mg-lr-10px">
+            <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#news">Tin tức</a>
+          </li>
+          <li class="nav-item al-mn-nav-item mg-lr-10px">
+            <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#">Về chúng tôi</a>
+          </li>
+        </ul>
+        <form class="d-flex al-mn-btn-cta d-none d-md-block">
+          <button class="btn-hotline-color mg-lr-10px" type="submit">
+            <span class="animate__animated animate__tada"><i class="xesanbay-phone-ring"></i></span>
+            0912 677 006</button>
+        </form>
+      </div>
+    </div>
+</nav>
   <!-- table price list -->
   <div class="price-list">
       <div class="container">
