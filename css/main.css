@@ -239,6 +239,9 @@ button:hover::after{
 .color-menu-sub{
     background-color: transparent;
 }
+.color-menu-sub-w{
+    background-color: var(--colorGeenDark)
+}
 .al-mn-nav{
     display: flex;
     justify-content: space-between;
@@ -355,6 +358,20 @@ button:hover::after{
 }
 
 /**form regis**/
+
+.from-ct{
+    width: 100%;
+}
+.from-ct .col-from-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.from-ct .col-from-2 .col-from-2-item{
+    width: 50%;
+    padding-left: calc(1.5rem * .3);
+    padding-right: calc(1.5rem * .3);
+}
+
 .form-registers{
     display: flex;
     flex-direction: column;
@@ -490,6 +507,15 @@ button:hover::after{
     align-items: center;
     padding: 0px;
     height: 38px;
+    margin-top: 1.5rem;
+}
+
+.info-row-cus{
+    display: flex;
+    gap: 20px;
+}
+.note-cus{
+    margin-top: 1.1rem;
 }
 .voucherForm{
     display: flex;
@@ -1309,6 +1335,28 @@ button:hover::after{
     }
     .form-registers .title-regis .tab-btn-regis{
         justify-content: center;
+    }
+    .col-from-2{
+        flex-direction: column;
+    }
+    .from-ct .col-from-2 .col-from-2-item{
+        width: 100%;
+    }
+    .switchButton{
+        margin-top: 1rem;
+    }
+    .label-air{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .voucherForm{
+        margin-top: 1rem;
+    }
+    .ord:nth-child(4){
+        order: 4;
+    }
+    .note-cus{
+        margin-top: 0;
     }
 
     /* Service Tab */
