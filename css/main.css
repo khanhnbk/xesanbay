@@ -486,7 +486,7 @@ button:hover::after{
 }
 .switchButton{
     display: grid;
-    grid-template-columns: 1fr 1fr 1.2fr;
+    grid-template-columns: 1fr 1.2fr;
     align-items: center;
     padding: 0px;
     height: 38px;
