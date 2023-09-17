@@ -44,17 +44,17 @@
             <li class="nav-item al-mn-nav-item mg-lr-10px">
               <a class="nav-link al-mn-nav-item-link " aria-current="page" href="banggia.html">Bảng giá</a>
             </li>
-            <li class="nav-item al-mn-nav-item mg-lr-10px">
+            <!-- <li class="nav-item al-mn-nav-item mg-lr-10px">
               <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#news">Tin tức</a>
             </li>
             <li class="nav-item al-mn-nav-item mg-lr-10px">
               <a class="nav-link al-mn-nav-item-link " aria-current="page" href="#">Về chúng tôi</a>
-            </li>
+            </li> -->
           </ul>
           <form class="d-flex al-mn-btn-cta d-none d-md-block">
             <button class="btn-hotline-color mg-lr-10px" type="submit">
               <span class="animate__animated animate__tada"><i class="xesanbay-phone-ring"></i></span>
-              0912 677 006</button>
+              0888 30 3366</button>
           </form>
         </div>
       </div>
@@ -80,128 +80,231 @@
             <div class="title-regis">
               <h2>Đặt xe</h2>
               <div class="tab-btn-regis">
-                <button><i class="xesanbay-plane"></i> Sân bay</button>
-                <button><i class="xesanbay-road"></i> Đường dài</button>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="tab-btn-item nav-link active" id="pills-air-tab" data-bs-toggle="pill" data-bs-target="#pills-air" type="button" role="tab" aria-controls="pills-air" aria-selected="true"><i class="xesanbay-plane"></i> Sân bay</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="tab-btn-item nav-link" id="pills-road-tab" data-bs-toggle="pill" data-bs-target="#pills-road" type="button" role="tab" aria-controls="pills-road" aria-selected="false"><i class="xesanbay-road"></i> Đường dài</button>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div action="save_data.py" method="post" class="form-content">
-              <div class="form-content-lr">
-                <div id="mySwichbtn" class="swich-air-longway">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-air" role="tabpanel" aria-labelledby="pills-air-tab">
+                <div class="form-content">
+                  <div class="form-content-lr">
+                    <div id="mySwichbtn" class="swich-air-longway">
+                        <div class="relative mb-6">
+                          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                          <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                              <div class="ldot"></div>
+                            </span>
+                            <input type="text" name="diemdi" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1">+</span>
+                          </div>
+                      </div>
+                      <div class="relative mb-6">
+                        <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
+                        <div class="input-group input-group-sm mb-3">
+                          <span class="input-group-text" id="basic-addon1">
+                            <i class="xesanbay-location"></i>
+                          </span>
+                          <input type="text" name="diemden" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>
+                    <div id="mySwichbtn-sc" class="swich-air-longway-sc">
+                      <div class="relative mb-6">
+                        <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
+                        <div class="input-group input-group-sm mb-3">
+                          <span class="input-group-text" id="basic-addon1">
+                            <i class="xesanbay-location"></i>
+                          </span>
+                          <input type="text" name="diemden" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                        <div class="relative mb-6">
+                          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                          <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                              <div class="ldot"></div>
+                            </span>
+                            <input type="text" name="diemdi" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1">+</span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div class="row">
+                        <div class="col">
+                          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Loại xe</label>
+                          <div class="input-group input-group-sm mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">
+                              <i class="xesanbay-car"></i>
+                            </label>
+                            <select name="gender" class="form-select" id="inputGroupSelect01">
+                              <option value="fiveS" selected>5 Chỗ</option>
+                              <option value="sevenS">7 Chỗ</option>
+                              <option value="sixteenS">16 Chỗ</option>
+                              <option value="twenty-nineS">29 Chỗ</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thời gian đi</label>
+                          <div class="input-group input-group-sm mb-3 date">
+                            <label class="input-group-text" for="inputGroupSelect02">
+                              <i class="xesanbay-calender"></i>
+                            </label>
+                              <input type="date" name="date-go" class="form-control" id="date-go"/>
+                              <span class="input-group-append">
+                          </div>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="form-content-lr">
+                    <div class="relative">
+                      <div class="switchButton">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" name="darkmode" id="darkmode" checked data-label="Bật/Tắt">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">2 Chiều</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" name="vat" id="darkmode" checked data-label="Bật/Tắt">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">VAT</label>
+                        </div>
+                        <div class="switchbtn">
+                          <button class="w-100 justify-content-center" onclick="myFunction()"><i class="xesanbay-arrow-rounded"></i> Đảo chiều</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative mt-3">
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mã chuyến bay</label>
+                      <div class="input-group input-group-sm mb-3">
+                        <input type="text" name="aircode" class="form-control" placeholder="Mã chuyến bay" aria-label="go" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thông tin quý khách</label>
+                      <div class="col">
+                        <div class="input-group input-group-sm mb-3">
+                          <label class="input-group-text" for="inputGroupSelect01">
+                            <i class="xesanbay-phone"></i>
+                          </label>
+                          <input type="number" name="mobile" class="form-control" placeholder="Số điện thoại" aria-label="go" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="input-group input-group-sm mb-3">
+                          <label class="input-group-text" for="inputGroupSelect02">
+                            <i class="xesanbay-account"></i>
+                          </label>
+                          <input type="text" name="name" class="form-control" placeholder="Họ và tên" aria-label="go" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-road" role="tabpanel" aria-labelledby="pills-road-tab">
+                <div class="form-content">
+                  <div class="form-content-lr">
+                    <div class="swich-air-longway">
+                        <div class="relative mb-6">
+                          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                          <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                              <div class="ldot"></div>
+                            </span>
+                            <input type="text" name="diemdi" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1">+</span>
+                          </div>
+                      </div>
+                    </div>
                     <div class="relative mb-6">
-                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
                       <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="basic-addon1">
                           <div class="ldot"></div>
                         </span>
-                        <input type="text" name="diemdi" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
-                        <span class="input-group-text" id="basic-addon1">+</span>
-                      </div>
-                  </div>
-                  <div class="relative mb-6">
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
-                    <div class="input-group input-group-sm mb-3">
-                      <span class="input-group-text" id="basic-addon1">
-                        <i class="xesanbay-location"></i>
-                      </span>
-                      <input type="text" name="diemden" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
-                    </div>
-                  </div>
-                </div>
-                <div id="mySwichbtn-sc" class="swich-air-longway-sc">
-                  <div class="relative mb-6">
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn muốn đến</label>
-                    <div class="input-group input-group-sm mb-3">
-                      <span class="input-group-text" id="basic-addon1">
-                        <i class="xesanbay-location"></i>
-                      </span>
-                      <input type="text" name="diemden" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
-                    </div>
-                  </div>
-                    <div class="relative mb-6">
-                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bạn đi từ</label>
-                      <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" id="basic-addon1">
-                          <div class="ldot"></div>
-                        </span>
-                        <input type="text" name="diemdi" class="form-control" placeholder="Điểm đi" aria-label="go" aria-describedby="basic-addon1">
-                        <span class="input-group-text" id="basic-addon1">+</span>
-                      </div>
-                  </div>
-                </div>
-                <div class="relative">
-                  <div class="row">
-                    <div class="col">
-                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Loại xe</label>
-                      <div class="input-group input-group-sm mb-3">
-                        <label class="input-group-text" for="inputGroupSelect01">
-                          <i class="xesanbay-car"></i>
-                        </label>
-                        <select name="gender" class="form-select" id="inputGroupSelect01">
-                          <option value="fiveS" selected>5 Chỗ</option>
-                          <option value="sevenS">7 Chỗ</option>
-                          <option value="sixteenS">16 Chỗ</option>
-                          <option value="twenty-nineS">29 Chỗ</option>
-                        </select>
+                        <input type="text" name="diemden" class="form-control" placeholder="Sân bay nội bài" aria-label="go" aria-describedby="basic-addon1">
                       </div>
                     </div>
-                    <div class="col">
-                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thời gian đi</label>
-                      <div class="input-group input-group-sm mb-3 date">
-                        <label class="input-group-text" for="inputGroupSelect02">
-                          <i class="xesanbay-calender"></i>
-                        </label>
-                          <input type="date" name="date-go" class="form-control" id="date-go"/>
-                          <span class="input-group-append">
+                    <div class="relative">
+                      <div class="switchButton">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" name="darkmode" id="darkmode" checked data-label="Bật/Tắt">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">2 Chiều</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" name="vat" id="darkmode" checked data-label="Bật/Tắt">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">VAT</label>
+                        </div>
                       </div>
                     </div>
-                  </div>  
-                </div>
-              </div>
-              <div class="form-content-lr">
-                <div class="relative">
-                  <div class="switchButton">
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" name="darkmode" id="darkmode" checked data-label="Bật/Tắt">
-                      <label class="form-check-label" for="flexSwitchCheckDefault">2 Chiều</label>
+                  </div>
+                  <div class="form-content-lr p-0">
+                    <div class="relative">
+                      <div class="row">
+                        <div class="col">
+                          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Loại xe</label>
+                          <div class="input-group input-group-sm mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">
+                              <i class="xesanbay-car"></i>
+                            </label>
+                            <select name="gender" class="form-select" id="inputGroupSelect01">
+                              <option value="fiveS" selected>5 Chỗ</option>
+                              <option value="sevenS">7 Chỗ</option>
+                              <option value="sixteenS">16 Chỗ</option>
+                              <option value="twenty-nineS">29 Chỗ</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thời gian đi</label>
+                          <div class="input-group input-group-sm mb-3 date">
+                            <label class="input-group-text" for="inputGroupSelect02">
+                              <i class="xesanbay-calender"></i>
+                            </label>
+                              <input type="date" name="date-go" class="form-control" id="date-go"/>
+                              <span class="input-group-append">
+                          </div>
+                        </div>
+                      </div>  
                     </div>
-                    <div class="switchbtn">
-                      <button class="w-100 justify-content-center" onclick="myFunction()"><i class="xesanbay-arrow-rounded"></i> Đảo chiều</button>
-                    </div>
+                    <div class="row">
+                      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thông tin quý khách</label>
+                      <div class="col">
+                        <div class="input-group input-group-sm mb-3">
+                          <label class="input-group-text" for="inputGroupSelect01">
+                            <i class="xesanbay-phone"></i>
+                          </label>
+                          <input type="number" name="mobile" class="form-control" placeholder="Số điện thoại" aria-label="go" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="input-group input-group-sm mb-3">
+                          <label class="input-group-text" for="inputGroupSelect02">
+                            <i class="xesanbay-account"></i>
+                          </label>
+                          <input type="text" name="name" class="form-control" placeholder="Họ và tên" aria-label="go" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>  
                   </div>
                 </div>
-                <div class="relative mt-3">
-                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mã chuyến bay</label>
-                  <div class="input-group input-group-sm mb-3">
-                    <input type="text" name="aircode" class="form-control" placeholder="Mã chuyến bay" aria-label="go" aria-describedby="basic-addon1">
-                  </div>
-                </div>
-                <div class="row mt-3">
-                  <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thông tin quý khách</label>
-                  <div class="col">
-                    <div class="input-group input-group-sm mb-3">
-                      <label class="input-group-text" for="inputGroupSelect01">
-                        <i class="xesanbay-phone"></i>
-                      </label>
-                      <input type="number" name="mobile" class="form-control" placeholder="Số điện thoại" aria-label="go" aria-describedby="basic-addon1">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="input-group input-group-sm mb-3">
-                      <label class="input-group-text" for="inputGroupSelect02">
-                        <i class="xesanbay-account"></i>
-                      </label>
-                      <input type="text" name="name" class="form-control" placeholder="Họ và tên" aria-label="go" aria-describedby="basic-addon1">
-                    </div>
-                  </div>
-                </div>  
               </div>
             </div>
-            <!-- <div class="relative w-100">
+            
+            <div class="relative w-100">
               <span class="addNote">+ Thêm ghi chú</span>
               <div class="input-group input-group-sm mb-3">
                 <input type="text" class="form-control" placeholder="Ghi chú" aria-label="go" aria-describedby="basic-addon1">
               </div>
-            </div> -->
+            </div>
             <div class="btnCallCar">
               <button type="submit" name="submit" class="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Đặt xe</button>
             </div>
@@ -517,7 +620,8 @@
       } else {
         y.style.display = "none";
       }
-    }
+    };
+    
 
     // $(function(){
     //   $('#datepicker').datepicker();

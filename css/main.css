@@ -241,7 +241,7 @@ button:hover::after{
 }
 .al-mn-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 80%;
 }
 .al-mn-nav-item-link{
@@ -277,7 +277,7 @@ button:hover::after{
 .navbar-dark{
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 5px;
     z-index: 1000;
 }
 
@@ -419,6 +419,11 @@ button:hover::after{
     border-radius: 50px;
     word-wrap: normal;
 }
+
+.form-registers .title-regis button{
+    background: transparent;
+    border: 1px solid var(--colorGeenLight);
+}
 .form-registers .switchbtn button{
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -434,6 +439,9 @@ button:hover::after{
 .form-registers .title-regis button:hover,
 .form-registers .switchbtn button:hover{
     background: var(--colorGeenDark);
+}
+.form-registers .title-regis button.active{
+    background: var(--colorGeenLight);
 }
 
 .form-registers .form-content{
@@ -486,7 +494,8 @@ button:hover::after{
 }
 .switchButton{
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    gap: 4px;
     align-items: center;
     padding: 0px;
     height: 38px;
