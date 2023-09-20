@@ -239,6 +239,9 @@ button:hover::after{
 .color-menu-sub{
     background-color: transparent;
 }
+.nav-scPage{
+    background-color: var(--colorGeenDark);
+}
 .al-mn-nav{
     display: flex;
     justify-content: space-evenly;
@@ -277,7 +280,6 @@ button:hover::after{
 .navbar-dark{
     width: 100%;
     position: absolute;
-    top: 5px;
     z-index: 1000;
 }
 
