@@ -1114,7 +1114,7 @@ button:hover::after{
     position: fixed;
     gap: 10px;
     right: 50px;
-    transform: translate(50%, 150%);
+    transform: translate(50%, 135%);
     z-index: 1000;
 }
 .list-btn-fixed a{
@@ -1280,6 +1280,17 @@ button:hover::after{
 
 /* mobile and table */
 @media only screen and (max-width: 63.9375em){
+    .click-ontop{
+        min-width: 60px;
+        min-height: 60px;
+    }
+    .list-btn-fixed {
+        transform: translate(50%, 185%);
+        right: 20px;
+    }
+    .list-btn-fixed a img{
+        width: calc(100% - 30%);
+    }
     .menu-top-navi{
         flex-direction: row-reverse;
     }
